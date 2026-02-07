@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-image: url("PartnerBG.webp");
+    width: 100vw;
+    height: 70vh;
+}
+.logo{
+    width: 5vw;
+    margin-top: 20vh;
+    margin-left: 25vw;
+}
+.tag{
+    color: white;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-left: 25.5vw;
+}
+.tag2{
+    color: white;
+    font-size: 43px;
+    font-family: Gilroy-ExtraBold;
+    margin-top: 4vh;
+    margin-left: 25.5vw;
+}
+.tag3{
+    color: white;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    margin-top: 3vh;
+    margin-left: 25.5vw;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 2vw; */
+    background-color: white;
+    border-radius: 2vw;
+    width: 22vw;
+    height: 37vh;
+    margin-left: 55vw;
+    margin-top: -35vh;
+}
+.form h2{
+    margin: 2vw;
+}
+.enter-number{
+    margin-top: 1vw;
+}
+.inputText{
+    width: 20vw;
+    height: 5vh;
+    border: 1.5px solid rgba(2, 6, 12, 0.15);
+    border-radius: 10vw;
+    padding: 2vh;
+    margin-left: 1vw;
+}
+
+.tag4{
+    margin-left: 2vw;
+    color: rgba(40, 44, 62, 0.7);
+    font-size: 1vw;
+    line-height: 16px;
+    font-family: Gilroy-Medium;
+}
+.button{
+    background-color:  rgb(212, 213, 217);
+    width: 10vw;
+    border: 1px solid rgb(132, 131, 131);
+    height: 5vh;
+    border-radius: 10vw;
+    margin-top: 3vh;
+    margin-left: 5.5vw;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(198, 198, 201);
+}
+.tag5{
+    color: rgb(147, 149, 159);
+    font-size: 1.5vh;
+    margin-left: 3vh;
+    margin-top: 3vh;
+}
+.intro-1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    color: rgba(2, 6, 12, 0.45);
+    font-weight: bold;
+    margin-bottom: 0.7vw;
+}
+.intro-2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    color: rgb(74, 74, 74);
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+}
+.description{
+    display:flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    padding-top: 3vw;
+    padding: 3vw 5vw 5vw;
+    gap: 1vw;
+}
+.steps-3{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.grid-1{
+    display: flex;
+    flex-direction: column;
+}
+.describe{
+    padding: 24px 100px 24px 16px;
+    background-color: rgb(240, 240, 245);
+    border-radius: 16px;
+    height: 27vh;
+}
+.step-number{
+    color: rgba(2, 6, 12, 0.6);
+    font-size: 2vh;
+
+}
+.step-describe{
+    color: rgba(2, 6, 12, 0.75);
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+.container{
+    background-image: url(https://vendor-media-assets.swiggy.com/static-assets/icons/paper.svg);
+        width: 40.3vw;
+        height: 36.5vh
+}
+.display{
+    display:flex;
+    flex-direction: row;
+    gap: 5vw;
+}
+.line1{
+    padding-top: 3vh;
+    padding-left:5vh;
+    color: rgba(2, 6, 12, 0.75);
+    font-family: "Roboto", sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.line2{
+    padding-bottom: 2vh;
+    padding-left:5vh;
+    color: rgba(2, 6, 12, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-size: 1vw;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.dotted-line{
+    height: 0.01vh;
+    border: 1px dotted rgba(2, 6, 12, 0.15);
+    
+}
+
+.document-main{
+    color: rgba(2, 6, 12, 0.75);
+    display: flex;
+    flex-direction: row;
+    margin: 1.3vw;
+    padding-left: 4vh;
+    font-family: "Merriweather", serif;
+    font-size: 2.3vh;
+    font-style: normal;
+}
+.bullet{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 1vh;
+    background-color: rgb(255, 82, 0)
+}
+@media (max-width: 1200px){
+
+    .form{
+        margin-left: 50vw;
+        margin-top: -25vh;
+        width: 35vw;
+    }
+
+    .inputText{
+        width: 30vw;
+    }
+}
+@media (max-width: 1177px){
+
+    .hero{
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    
+    .form{
+        margin: 5vh auto 0;
+        width: 70vw;
+        height: auto;
+    }
+
+    .inputText{
+        width: 65vw;
+    }
+
+    .button{
+        width: 30vw;
+        margin-left: 20vw;
+    }
+
+    .logo,
+    .tag,
+    .tag2,
+    .tag3{
+        margin-left: 10vw;
+    }
+
+    .tag2{
+        font-size: 34px;
+    }
+
+    .description{
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .container{
+        width:51.8vw;
+        height:30vh;
+    }
+    .describe{
+        width: 80vw;
+        height: auto;
+    }
+}
+@media (max-width: 850px){
+
+    .hero{
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    
+    .form{
+        margin: 5vh auto 0;
+        width: 70vw;
+        height: auto;
+    }
+
+    .inputText{
+        width: 65vw;
+    }
+
+    .button{
+        width: 30vw;
+        margin-left: 20vw;
+    }
+
+    .logo,
+    .tag,
+    .tag2,
+    .tag3{
+        margin-left: 10vw;
+    }
+
+    .tag2{
+        font-size: 34px;
+    }
+
+    .description{
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .container{
+        width:51.8vw;
+        height:25vh;
+    }
+    .describe{
+        width: 80vw;
+        height: auto;
+    }
+}
+@media (max-width: 600px){
+
+    .logo{
+        width: 14vw;
+        margin-left: 6vw;
+        margin-top: 5vh;
+    }
+
+    .tag{
+        font-size: 14px;
+        margin-left: 6vw;
+    }
+
+    .tag2{
+        font-size: 26px;
+        margin-left: 6vw;
+    }
+
+    .tag3{
+        font-size: 14px;
+        margin-left: 6vw;
+    }
+
+    .form{
+        width: 90vw;
+        margin: 4vh auto;
+    }
+
+    .inputText{
+        width: 85vw;
+    }
+
+    .button{
+        width: 50vw;
+        margin-left: 20vw;
+    }
+
+    .describe{
+        width: 90vw;
+    }
+    .container{
+        width: 80vw;
+        height:20vh;
+    }
+}

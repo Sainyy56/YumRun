@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: rgb(85, 93, 114);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: rgb(236, 231, 231);
+    width: 90vw;
+    height: 75vh;
+    max-width: 90vw;
+    border-radius: 1.5vh;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.5);
+}
+
+
+.sidebar {
+    width: 45vw;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url('login-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 6vh;
+    color: #ffffff;
+}
+
+.sidebar p {
+    font-size: 2.3vh;
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+
+.text {
+    width: 45vw;
+    height: 100%;
+    padding: 5vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.input-text {
+    background: rgb(18, 31, 63);
+    width: 22vw;
+    height: 5vh;
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 0.5vh;
+    outline: none;
+    font-size: 2vh;
+    color: white;
+}
+
+
+button {
+    background: rgb(18, 31, 63);
+    width: 22vw;
+    height: 5vh;
+    margin-top: 2vh;
+    color: #b2b9df;
+    border: none;
+    border-radius: 0.5vh;
+    font-weight: 600;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(58, 79, 131);
+    transform: translateY(-0.3vh);
+}
+
+
+.loginspan {
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(18, 31, 63);
+}
+
+.loginspan:hover {
+    color: rgb(18, 31, 63);
+    text-decoration: underline;
+}
+
+.googleApple {
+    background: rgb(18, 31, 63);
+    width: 22vw;
+    height: 4vh;
+    color: #333;
+    margin: 0.8vh 0;
+    border-radius: 0.5vh;
+    font-size: 1.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.googleApple:hover {
+    background-color: rgb(58, 79, 131);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .sidebar,
+    .text {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .inputtext,
+    button,
+    .googleApple{
+        width: 60vw;
+    }
+
+    .text img {
+        width: 15vw;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        height: 95vh;
+    }
+
+    .sidebar {
+        height: 35vh;
+        padding: 4vh 5vw;
+    }
+
+    .sidebar h2 {
+        font-size: 5vh;
+    }
+
+    .text {
+        height: 60vh;
+    }
+
+    .inputtext,
+    button,
+    .googleApple{
+        width: 75vw;
+        font-size: 2vh;
+    }
+
+    .text img {
+        width: 22vw;
+    }
+
+}
+@media (max-width: 600px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .text {
+        width: 90vw;
+        height: auto;
+        min-height: 70vh;
+        border-radius: 2vh;
+        justify-content: center;
+    }
+
+    .inputtext,
+    button,
+    .googleApple{
+        width: 80vw;
+        font-size: 2vh;
+    }
+
+    button {
+        height: 5.5vh;
+    }
+}
